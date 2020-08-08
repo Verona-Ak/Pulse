@@ -1,0 +1,8 @@
+@mixin link {
+    font-size: 14px;
+    color: $main_color;
+    font-weight: 400;
+    text-decoration: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+}

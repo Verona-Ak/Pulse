@@ -22,11 +22,7 @@
             text-align: justify;
         }
         a {
-            color: $main_color;
-            text-decoration: underline;
-            text-transform: uppercase;
-            font-weight: 400;
-            cursor: pointer;
+           @include link
         }
         img {
             width: 70px;
