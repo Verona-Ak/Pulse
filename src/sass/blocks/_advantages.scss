@@ -2,12 +2,20 @@
     padding: 69px 0 78px 0;
     min-height: 470px;
     background-color: #f6f6f6;
+    @media(max-width: 767px){
+        padding: 50px 0 48px 0;
+    }
     &__icons {
        margin-top: 65px;
-       width: 922px; 
        display: flex;
        justify-content: space-between;
-       
+       @media (max-width: 991px){
+            flex-direction: column;
+            align-items: center; 
+        }
+        @media (max-width: 767px){
+            margin-top: 45px; 
+        }
     }
     &__icon {
         width: 247px;
@@ -18,11 +26,27 @@
         font-size: 14px;
         font-weight: 300;
         text-align: center;
+        &:nth-child(2), &:nth-child(3) {
+            @media (max-width: 991px){
+                margin-top: 65px;
+            }
+            @media (max-width: 767px){
+                margin-top: 45px;
+            }
+            @media (max-width: 575px){
+               font-size: 13px;
+            }
+            
+        } 
+        
         span {
             text-align: justify;
         }
         a {
-           @include link
+           @include link;
+           @media (max-width: 575px){
+                font-size: 13px;
+            }
         }
         img {
             width: 70px;
@@ -36,6 +60,11 @@
             font-weight: 700;
             line-height: 23px;
             text-align: center;
+            @media (max-width: 575px){
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
         }
 
     }
