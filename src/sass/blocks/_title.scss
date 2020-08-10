@@ -16,6 +16,28 @@
         font-size: 36px;
         text-align: left;
         line-height: 45px;
+        @media (max-width: 1200px) {
+            margin-left: 100px;
+        }
+        @media (max-width: 991px) {
+            margin-left: 0;
+            text-align: center;
+            font-size: 33px;
+        }
+        @media (max-width: 767px) {
+            font-size: 30px;
+            margin: 0 30px;
+            line-height: 42px;
+        }
+        @media (max-width: 575px){
+            font-size: 21px;
+            line-height: 39px;
+        }
+        @media (max-width: 320px){
+            font-size: 18px;
+            line-height: 30px;
+        }
+
 
     }
 }
