@@ -54,4 +54,43 @@ $(document).ready(function(){
             $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
         })
     });
+
+    //Валидация форм
+
+    function valodateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true,
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("Введите {0} символа!")
+                },
+                phone: "Пожалуйста, введите свой телефон",
+                email: {
+                  required: "Пожалуйста, введите свою почту",
+                  email: "Неправильно введён адрес почты"
+                }
+            }
+    
+        });
+    };
+    valodateForms('#consultation-form');
+    valodateForms('#consultation form');
+    valodateForms('#order form');
+
+    //Маска ввода номера
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+
 });
