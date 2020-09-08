@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
@@ -66,7 +67,7 @@
                     Наши сотрудники всегда готовы поделитьcя своим опытом,<br>так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
                 </div>
                 <div class="advantages__icon">
-                    <img src="icons/advantages/heart.png" alt="heart">
+                    <img class="advantages__icon__animated" src="icons/advantages/heart.png" alt="heart">
                     <h3>Заботимся о здоровье</h3>
                     Мы работаем для того,<br>чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
                 </div>
@@ -423,7 +424,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
             <div class="review__content">
-                <div class="review__item">
+                <div class="review__item fadeInUp wow"  data-wow-duration="2s" data-wow-delay="1s"">
                     <img src="img/reviews/julia.png" alt="photo" class="review__img">
 
                     <div class="review__info">
@@ -446,7 +447,7 @@
                     
                 </div>
                 <hr class="review__hr">
-                <div class="review__item">
+                <div class="review__item fadeInUp wow"  data-wow-duration="2s" data-wow-delay="1s"">
                     <img src="img/reviews/ivan.png" alt="photo" class="review__img">
                     <div class="review__info">
                         <div class="review__name">Иван Сёмочкин</div>
@@ -464,7 +465,7 @@
                     
                 </div>
                 <hr class="review__hr">
-                <div class="review__item">
+                <div class="review__item fadeInUp wow"  data-wow-duration="2s" data-wow-delay="1s"">
                     <img src="img/reviews/irina.png" alt="photo" class="review__img">
                     <div class="review__info">
                         <div class="review__name">Юлия Дашкина</div>
@@ -541,6 +542,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>  
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
